@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
 export class AppComponent implements OnInit{
   title = 'dexter-assignments';
 
-  canvasAssignmentsUrl = "https://dexterschools.instructure.com/api/v1/courses/7218/assignment_groups?exclude_assignment_submission_types%5B%5D=wiki_page&exclude_response_fields%5B%5D=description&exclude_response_fields%5B%5D=rubric&include%5B%5D=assignments&include%5B%5D=discussion_topic&override_assignment_dates=true&per_page=50";
+  canvasAssignmentsUrl = "https://dexterschools.instructure.com/api/v1/courses/7218/assignment_groups?exclude_assignment_submission_types%5B%5D=wiki_page&exclude_response_fields%5B%5D=description&exclude_response_fields%5B%5D=rubric&include%5B%5D=assignments&include%5B%5D=discussion_topic&override_assignment_dates=true&per_page=50&access_token=12351~U8SRdwOSQcRQcDt9S0xZCuPeKYyAoAEbqaQduP66chRODLDNv41ZXmokghDuLJaA";
   assignments: any;
 
   constructor(private readonly httpClient: HttpClient) {
